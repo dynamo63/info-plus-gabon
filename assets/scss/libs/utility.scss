@@ -1,3 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Bellota|Open+Sans&display=swap');
+
 body{
     @include reset-space;
+}
+
+.divider{
+
+    text-align: center;
+    background-color: $green-2;
+    height: 2vh;
+    position: relative;
+    span{
+        border-radius: 50px;
+        font-size: x-large;
+        position: absolute;
+        transform: translate(-50%,0);
+        background-color: $green-2;
+        padding: .25em .45em;
+    }
+}
+
+main{
+    display: flex;
 }

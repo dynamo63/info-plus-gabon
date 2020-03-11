@@ -1,4 +1,9 @@
-@mixin reset-space {
-    margin: 0;
+@mixin reset-space($value:0) {
+    margin: $value;
     padding: 0;
+}
+
+@mixin reset-list($value:0) {
+    @include reset-space($value);
+    list-style: none;
 }

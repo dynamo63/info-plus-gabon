@@ -1,0 +1,46 @@
+.banner{
+    height: 70vh;
+    background-image: linear-gradient(to bottom,$green-l5,$green-l4),url($bg-banner);
+    background-size: cover;
+    background-position: center;
+    @include reset-space;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.banner__slider{
+    // width: 40%;
+    // display: flex;
+    overflow-x: hidden;
+    @include reset-list(auto);
+    // border: 1px solid $white;
+
+    > li {
+        font-family: $font-title;
+        color: $white;
+        font-size: 1.7em;
+    }
+}
+
+.banner__cards{
+    display: flex;
+    justify-content: center;
+
+    .card-item{
+        width: 20%;
+        color:$white;
+        font-family: $font-open-sans;
+        margin: 0 1em;
+        font-weight: bold;
+    }
+
+    .card-item:first-child > img{
+        float: right;
+    }
+
+    .card-item:last-child > img{
+        float: left;
+    }
+}
