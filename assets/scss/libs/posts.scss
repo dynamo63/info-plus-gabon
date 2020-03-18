@@ -1,0 +1,85 @@
+// Ici on s'occupe du style de la 2eme section principale
+
+.posts{
+    width: 65vw;
+    border-right: 1px solid $gray;
+}
+
+.posts > h1{
+    text-align: center;
+    text-decoration: underline $green-2;
+    font-family: $font-title;
+}
+
+article{
+    width: 90%;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px $gray-1;
+    margin: 0 auto 1.5em;
+}
+
+.article__title{
+    color: $green;
+    font-family: $font-open-sans;
+    font-size: 1.2em;
+}
+
+.article__content{
+    color: $dark;
+    font-family: $font-poppins;
+}
+
+.article__footer{
+    display: flex;
+    justify-content: space-between;
+
+    & time {
+        color: $dark-1;
+        font-family: sans-serif;
+    }
+}
+
+.article__link > a{
+    box-sizing: border-box;
+    padding: .5em .6em;
+    // border-radius: 60px;
+    background-color: $green;
+    text-decoration-style: none;
+    color: $white;
+    margin: 0 .5em;
+}
+
+
+.pagination{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.page{
+    box-shadow: 0 0 10px $gray-1;
+    font-family: $font-poppins;
+    font-weight: bold;
+    padding: .5em 1em;
+    color: $dark;
+    text-decoration:none;
+    transition: background-color .5s ease-out,color .4s ease-in;
+
+    &:hover:not(.other){
+        background-color: $green;
+        color: $white;
+    }
+}
+
+.other{
+    border: none;
+    box-shadow: none;
+    letter-spacing: 5px;
+}
+
+.page--active{
+    background-color: $green;
+    color: $white;
+}

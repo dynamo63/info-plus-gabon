@@ -8,7 +8,6 @@
     @include reset-list;
     overflow-x: hidden;
     height: 70vh;
-    // margin-bottom: 2em;
 
     li {
         margin-bottom: 1em;
@@ -63,8 +62,7 @@
 
 .input__field{
     display: flex;
-    // justify-content: space-around;
-    border: 1px solid $dark;
+    border: 1px solid $dark-1;
     padding: .35em;
     margin-bottom: 1em;
     box-sizing: border-box;
