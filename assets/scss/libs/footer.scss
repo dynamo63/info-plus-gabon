@@ -1,0 +1,32 @@
+footer{
+    background-color: $green;
+    color: $white;
+    font-family: $font-poppins;
+}
+
+.footer__heading{
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid $gray;
+
+    ul{
+        @include reset-list;
+    }
+
+    a{
+        text-decoration: none;
+        color: $yellow;
+    }
+}
+
+.footer__content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__links a{
+    padding: .150em .5em;
+    background-color: $white;
+    color: $green;
+}
