@@ -1,0 +1,56 @@
+.session{
+    width: 20vw;
+}
+
+.session > form{
+    width: 80%;
+    margin: auto;
+
+    & legend{
+        font-family: $font-title;
+        font-size: 1.3em;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    & .img__legend{
+        font-size: 3em;
+        text-align: center;
+        margin: .2em 0;
+    }
+
+    & > div:not(:first-of-type):not(:last-of-type){
+        display: flex;
+        flex-direction: column;
+        font-family: $font-poppins;
+        margin: .3em 0;
+    }
+
+    & > div:last-of-type{
+        font-family: sans-serif;
+    }
+
+    & > input{
+        border: none;
+        outline: none;
+        background-color: $green;
+        color: $white;
+        padding: .375em 1em;
+        font-family: $font-classic;
+        font-size: 1em;
+        margin: .5em 0;
+        cursor: pointer;
+    }
+}
+
+.aside__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & a{
+        text-decoration: none;
+        color: $link;
+        font-family: $font-open-sans;
+    }
+}

@@ -185,7 +185,34 @@
             </div>
         </section>
         <div class="session">
-            <!-- Nos formulaires -->
+            <form action="" method="post">
+                <legend>Identification</legend>
+                <div class="img__legend">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                </div>
+
+                <div>
+                    <label for="username">Identifiant</label>
+                    <input type="text" name="username" id="username"/>
+                </div>
+
+                <div>
+                    <label for="password">Mot de Passe</label>
+                    <input type="password" name="password" id="password" />
+                </div>
+
+                <div>
+                    <label for="remember">Se souvenir de moi</label>
+                    <input type="checkbox" name="remember" id="remember" />
+                </div>
+
+                <input type="submit" value="Connexion">
+            </form>
+
+            <div class="aside__link">
+                <a href="#">Mot de Passe oublie ?</a>
+                <a href="#">Identifiant oublie ?</a>
+            </div>
         </div>
     </main>
 
