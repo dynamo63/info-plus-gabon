@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <title>
         Info Plus Gabon
@@ -33,12 +34,87 @@
     </header>
 
     <div class="divider bg-yellow center">
-        <span>&Downarrow;</span>
+        <span>
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </span>
     </div>
 
     <main>
-        <div class="sidebar">
-            <!-- Ma barre denavigation -->
+        <div class="w-15">
+
+            <nav class="sidebar"> 
+                <ul class="sidebar__wrapper">
+                    <li>
+                        <a href="#" class="sidebar__link" >Accueil</a>
+                    </li>
+                    <li class="dropdown">
+                        <input type="checkbox" id="dropdown-btn1"  class="hidden dropdown__btn"/>
+                        <label for="dropdown-btn1" class="sidebar__link"> Actualites <i class="fa fa-chevron-down" aria-hidden="true"></i></label>
+                        <div class="dropdown-content">
+                            <a href="#" class="sidebar__link">Internationale</a>
+                            <a href="#" class="sidebar__link">Culture</a>
+                            <a href="#" class="sidebar__link">Sante</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar__link" >A la une</a>
+                    </li>
+                    <li class="dropdown">
+                        <input type="checkbox" id="dropdown-btn2" class="hidden dropdown__btn">
+                        
+                        <label for="dropdown-btn2" class="sidebar__link"> Economie <i class="fa fa-chevron-down" aria-hidden="true"></i></label>
+
+                        <div class="dropdown-content">
+                            <a href="#" class="sidebar__link">Finance</a>
+                            <a href="#" class="sidebar__link">Matiere Premiere</a>
+                            <a href="#" class="sidebar__link">Petrole et Gaz</a>
+                            <a href="#" class="sidebar__link">Bois</a>
+                            <a href="#" class="sidebar__link">Transports</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <input type="checkbox" id="dropdown-btn3" class="hidden dropdown__btn">
+                        
+                        <label for="dropdown-btn3" class="sidebar__link"> Tourisme <i class="fa fa-chevron-down" aria-hidden="true"></i></label>
+
+                        <div class="dropdown-content">
+                            <a href="#" class="sidebar__link">Assistance Aeroport</a>
+                            <a href="#" class="sidebar__link">Imigration</a>
+                            <a href="#" class="sidebar__link">Visite Touristique</a>
+                            <a href="#" class="sidebar__link">Organisation du sejour</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <input type="checkbox" id="dropdown-btn4" class="hidden dropdown__btn">
+                        
+                        <label for="dropdown-btn4" class="sidebar__link"> Autres Rubriques <i class="fa fa-chevron-down" aria-hidden="true"></i></label>
+
+                        <div class="dropdown-content">
+                            <a href="#" class="sidebar__link">Sciences</a>
+                            <a href="#" class="sidebar__link">Sport</a>
+                            <a href="#" class="sidebar__link">Reportage</a>
+                            <a href="#" class="sidebar__link">Multimedia</a>
+                            <a href="#" class="sidebar__link">Musique</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar__link" >Se loger au Gabon ?</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar__link" >Qui sommes nous ?</a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar__link" >Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="logo">
+                <span>Info Plus Gabon</span>
+            </div>
+
+            <form action="" class="newsletter"></form>
+
         </div>
         <section class="posts">
             <!-- Nos posts -->

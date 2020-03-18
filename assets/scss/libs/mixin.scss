@@ -7,3 +7,10 @@
     @include reset-space($value);
     list-style: none;
 }
+
+@mixin transform($value){
+    -o-transform: $value;
+    -moz-transform: $value;
+    -webkit-transform: $value;
+    transform: $value;
+}

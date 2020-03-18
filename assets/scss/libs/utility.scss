@@ -1,7 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Bellota|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins|Bellota|Open+Sans&display=swap');
 
 body{
     @include reset-space;
+}
+
+.w-15{
+    width: 15vw;
+}
+
+.hidden{
+    display: none;
 }
 
 .divider{
@@ -10,9 +18,9 @@ body{
     background-color: $green-2;
     height: 2vh;
     position: relative;
+    margin-bottom: 5em;
     span{
         border-radius: 50px;
-        font-size: x-large;
         position: absolute;
         transform: translate(-50%,0);
         background-color: $green-2;

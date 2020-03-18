@@ -3,5 +3,10 @@
 @import 'libs/mixin.scss';
 @import 'libs/utility.scss';
 
-// Import des fichiers css pour mes classes
-@import 'libs/banner.scss'
+// Nos composants
+
+@import 'components/dropdown.scss';
+
+// Import des fichiers css pour mes classes(Sections)
+@import 'libs/banner.scss';
+@import 'libs/sidebar.scss';

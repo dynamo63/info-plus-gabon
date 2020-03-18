@@ -1,0 +1,31 @@
+.dropdown{
+    position: relative;
+    label{
+        cursor: pointer;
+    }
+}
+
+.dropdown-content{
+
+    position: absolute;
+    background-color: $white;
+    z-index: 999;
+    border: 1px solid $gray;
+    transform-origin: top;
+    @include transform(scaleY(0));
+    opacity: 0.2;
+    transition: all 0.3s ease-out;
+
+    a{
+        display: inline-block;
+        width: 100%;
+        border-bottom: 1px solid $gray;
+        padding: .5em;
+        color: $dark;
+    }
+}
+
+.dropdown__btn:checked ~ .dropdown-content {
+    transform: scaleY(1);
+    opacity: 1;
+}
