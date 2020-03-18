@@ -1,8 +1,14 @@
+.menu{
+    border-right: 1px solid $gray;
+    padding-right: 1em;
+    margin-bottom: 1em;
+}
+
 .sidebar__wrapper{
     @include reset-list;
     overflow-x: hidden;
-    height: 75vh;
-    margin-bottom: 2em;
+    height: 70vh;
+    // margin-bottom: 2em;
 
     li {
         margin-bottom: 1em;
@@ -25,4 +31,47 @@
 .sidebar__dropdown{
     display: inline-block;
     width: 80%;
+}
+
+// Style du logo
+
+.logo{
+    font-size: 2em;
+    padding: 0 .5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $font-open-sans;
+    margin-bottom: 1em;
+
+    & > span{
+        color: transparent;
+        background: linear-gradient(217deg,$green-2,$green-4 70.71%),
+                    linear-gradient(127deg,$green-l5,$green-1 70.71%);
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+}
+
+// Style du newsletter 
+.newsletter{
+    padding: 0 .5em;
+
+    & label{
+        font-family: $font-classic;
+    }
+}
+
+.input__field{
+    display: flex;
+    // justify-content: space-around;
+    border: 1px solid $dark;
+    padding: .35em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+
+    & input{
+        border: none;
+        outline: none;
+        width: 90%;
+    }
 }
