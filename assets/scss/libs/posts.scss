@@ -19,6 +19,29 @@ article{
     margin: 0 auto 1.5em;
 }
 
+// Formulaire de recherche
+
+.input__search{
+    margin: 0 2em 1em;
+    width: 80%;
+
+    & > input{
+        width: 80%;
+        outline: none;
+        padding: .375em .5em;
+        font-family: $font-classic;
+    }
+
+    & > button{
+        padding: .375em 1em;
+        background-color: $green;
+        outline: none;
+        border: $green solid;
+        color: $white;
+        cursor: pointer;
+    }
+}
+
 .article__title{
     color: $green;
     font-family: $font-open-sans;
